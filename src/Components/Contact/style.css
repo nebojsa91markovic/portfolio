@@ -1,7 +1,6 @@
 .contact-wrapper {
-  padding: 10px;
-  padding-bottom: 20px;
   display: flex;
+  padding-bottom: 40px;
   flex-direction: column;
   background-color: #282c34;
   justify-content: space-between;
@@ -10,6 +9,7 @@
 
 .contact-wrapper .title {
   flex: 1 100%;
+  padding: 30px;
 }
 
 .mySupport {

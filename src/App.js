@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <Header />
       <Main />
-      {/* <Services /> */}
       <Tehnologies />
       <Projects />
       <Contact />

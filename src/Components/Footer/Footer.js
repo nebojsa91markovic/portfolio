@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="copyright-text">
       Copyright &copy;
-      {new Date().getFullYear()} All rights reserved | Nebojsa Markovic
+      {new Date().getFullYear()} | <span>Nebojsa Markovic</span>
     </div>
   );
 };
