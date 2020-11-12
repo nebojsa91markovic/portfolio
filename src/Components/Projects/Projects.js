@@ -1,6 +1,7 @@
 import React from "react";
 
 import RentACarImg from "../../images/projects/rentACar.png";
+import AlectoDesign from "../../images/projects/alectoDesign.png"
 import ChatRoomImg from "../../images/projects/chatRoom.png";
 import MovieSearchImg from "../../images/projects/movieSearch.png";
 import BetexpertImg from "../../images/projects/betexpert.png";
@@ -20,6 +21,15 @@ const Projects = () => {
             and rent events.
           </span>
           <img src={RentACarImg} alt="Rent a car" />
+        </a>
+      </div>
+      <div className="project-item">
+        <a href="https://bit.ly/3plOfol" target="_blank" rel="noreferrer">
+          <h2>Alecto design</h2>
+          <span>
+            Design template for one page website.
+          </span>
+          <img src={AlectoDesign} alt="Alecto design" />
         </a>
       </div>
       <div className="project-item">
@@ -56,7 +66,7 @@ const Projects = () => {
           <img src={VueTodoImg} alt="Vue todo" />
         </a>
       </div>
-      <div className="project-item">
+      <div className="project-item comingSoon">
         <h2>And more comming soon...</h2>
       </div>
     </div>

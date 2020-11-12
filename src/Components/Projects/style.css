@@ -67,6 +67,10 @@
   filter: none;
 }
 
+.comingSoon {
+  height: auto;
+}
+
 @media only screen and (max-width: 767px) {
   .project-item {
     flex: 0 100%;
