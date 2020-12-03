@@ -1,7 +1,8 @@
 import React from "react";
 
+import TeslaEatsImg from "../../images/projects/teslaeats.png";
 import RentACarImg from "../../images/projects/rentACar.png";
-import AlectoDesign from "../../images/projects/alectoDesign.png"
+import AlectoDesign from "../../images/projects/alectoDesign.png";
 import ChatRoomImg from "../../images/projects/chatRoom.png";
 import MovieSearchImg from "../../images/projects/movieSearch.png";
 import BetexpertImg from "../../images/projects/betexpert.png";
@@ -13,6 +14,16 @@ const Projects = () => {
   return (
     <div id="projects" className="projects-wrapper">
       <h1>My projects:</h1>
+      <div className="project-item">
+        <a href="https://bit.ly/2VutVn0" target="_blank" rel="noreferrer">
+          <h2>Tesla Eats</h2>
+          <span>
+            Practical app for creating polls where to eat and order food, inside
+            company, with excel export of order.
+          </span>
+          <img src={TeslaEatsImg} alt="Tesla Eats" />
+        </a>
+      </div>
       <div className="project-item">
         <a href="https://bit.ly/3edy5IK" target="_blank" rel="noreferrer">
           <h2>Rent a car</h2>
@@ -26,9 +37,7 @@ const Projects = () => {
       <div className="project-item">
         <a href="https://bit.ly/3plOfol" target="_blank" rel="noreferrer">
           <h2>Alecto design</h2>
-          <span>
-            Design template for one page website.
-          </span>
+          <span>Design template for one page website.</span>
           <img src={AlectoDesign} alt="Alecto design" />
         </a>
       </div>
