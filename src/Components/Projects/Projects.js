@@ -15,7 +15,7 @@ const Projects = () => {
     <div id="projects" className="projects-wrapper">
       <h1>My projects:</h1>
       <div className="project-item">
-        <a href="https://bit.ly/2VutVn0" target="_blank" rel="noreferrer">
+        <a href="https://bit.ly/3nqAtiW" target="_blank" rel="noreferrer">
           <h2>Tesla Eats</h2>
           <span>
             Practical app for creating polls where to eat and order food, inside
@@ -35,7 +35,7 @@ const Projects = () => {
         </a>
       </div>
       <div className="project-item">
-        <a href="https://bit.ly/3plOfol" target="_blank" rel="noreferrer">
+        <a href="https://bit.ly/34fVCF0" target="_blank" rel="noreferrer">
           <h2>Alecto design</h2>
           <span>Design template for one page website.</span>
           <img src={AlectoDesign} alt="Alecto design" />
@@ -52,7 +52,7 @@ const Projects = () => {
         </a>
       </div>
       <div className="project-item">
-        <a href="https://bit.ly/35R04dv" target="_blank" rel="noreferrer">
+        <a href="https://bit.ly/34fIe3C" target="_blank" rel="noreferrer">
           <h2>Movie Search</h2>
           <span>Search movie database using API requests.</span>
           <img src={MovieSearchImg} alt="Movie Search" />
