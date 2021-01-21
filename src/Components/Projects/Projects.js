@@ -7,6 +7,7 @@ import ChatRoomImg from "../../images/projects/chatRoom.png";
 import MovieSearchImg from "../../images/projects/movieSearch.png";
 import BetexpertImg from "../../images/projects/betexpert.png";
 import VueTodoImg from "../../images/projects/vueTodo.png";
+import EshopOverwatch from "../../images/projects/eshopOverwatch.png";
 
 import "./style.css";
 
@@ -14,6 +15,16 @@ const Projects = () => {
   return (
     <div id="projects" className="projects-wrapper">
       <h1>My projects:</h1>
+      <div className="project-item">
+        <a href="https://bit.ly/3nqAtiW" target="_blank" rel="noreferrer">
+          <h2>E-shop Overwatch</h2>
+          <span>
+            Modern online shop, with modern features like Redux, Hooks, Video
+            tag etc.
+          </span>
+          <img src={EshopOverwatch} alt="Eshop Overwatch" />
+        </a>
+      </div>
       <div className="project-item">
         <a href="https://bit.ly/3nqAtiW" target="_blank" rel="noreferrer">
           <h2>Tesla Eats</h2>
