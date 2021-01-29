@@ -36,7 +36,7 @@ const Projects = () => {
         delay="500"
         scrollableParentSelecto="true"
       >
-        <a href="https://bit.ly/3nqAtiW" target="_blank" rel="noreferrer">
+        <a href="https://bit.ly/3cuFNz4" target="_blank" rel="noreferrer">
           <h2>E-shop Overwatch</h2>
           <span>
             Modern online shop, with modern features like Redux, Hooks, Video
@@ -66,7 +66,7 @@ const Projects = () => {
         delay="500"
         scrollableParentSelecto="true"
       >
-        <a href="https://bit.ly/3edy5IK" target="_blank" rel="noreferrer">
+        <a href="https://bit.ly/3pxv1fc" target="_blank" rel="noreferrer">
           <h2>Rent a car</h2>
           <span>
             React app using Firebase. Insert, edit or delete vehicels, customers
