@@ -3,35 +3,58 @@ import React from "react";
 import GitHubIcon from "../../images/icons/github.png";
 import LinkedinIcon from "../../images/icons/linkedin.png";
 import GmailIcon from "../../images/icons/gmail.png";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import "./style.css";
 
 const Contact = () => {
   return (
     <div id="contact" className="contact-wrapper">
-      <div className="title">
+      <ScrollAnimation
+        className="title"
+        animateIn="zoomOut"
+        delay="250"
+        scrollableParentSelecto="true"
+      >
         <h2>How to reach me:</h2>
-      </div>
+      </ScrollAnimation>
 
       <div className="mySupport">
-        <div className="support">
+        <ScrollAnimation
+          className="support"
+          animateIn="zoomOut"
+          delay="500"
+          scrollableParentSelecto="true"
+        >
           <p>
             If you have any questions, job offers or some opinion you want to
             share or ask, don't hesitate to contact me.
           </p>
           <span>I'm exited to here from you.</span>
-        </div>
+        </ScrollAnimation>
         <div className="contacts">
           <div className="links-wrapper">
-            <div className="link-contact">
+            <ScrollAnimation
+              className="link-contact"
+              animateIn="fade"
+              delay="750"
+              scrollableParentSelecto="true"
+              duration="2"
+            >
               <span>Email</span>
               <span className="logo-wrapper">
                 <a href="mailto:nebojsa91markovic@gmail.com">
                   <img src={GmailIcon} alt="Gmail Icon" />
                 </a>
               </span>
-            </div>
-            <div className="link-contact">
+            </ScrollAnimation>
+            <ScrollAnimation
+              className="link-contact"
+              animateIn="fade"
+              delay="1000"
+              scrollableParentSelecto="true"
+              duration="2"
+            >
               <span>Linkedin</span>
               <span className="logo-wrapper">
                 <a
@@ -42,8 +65,14 @@ const Contact = () => {
                   <img src={LinkedinIcon} alt="Linkedin Icon" />
                 </a>
               </span>
-            </div>
-            <div className="link-contact">
+            </ScrollAnimation>
+            <ScrollAnimation
+              className="link-contact"
+              animateIn="fade"
+              delay="1250"
+              scrollableParentSelecto="true"
+              duration="2"
+            >
               <span>GitHub</span>
               <span className="logo-wrapper">
                 <a
@@ -54,7 +83,7 @@ const Contact = () => {
                   <img src={GitHubIcon} alt="GitHub Icon" />
                 </a>
               </span>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

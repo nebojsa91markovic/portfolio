@@ -7,8 +7,9 @@
   background-attachment: fixed;
   margin: 0;
   padding: 0;
-  height: 500px;
+  height: 70vh;
   width: 100%;
+  font-family: "Carter One", cursive;
 }
 
 .slider {
@@ -31,8 +32,7 @@
 }
 
 .slider_slide .main-title {
-  color: lime;
-  font-family: "Courier";
+  color: rgb(253, 174, 27);
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
@@ -41,22 +41,26 @@
 }
 
 .slider_slide .main-title h1 {
-  font-size: 36px;
+  font-size: 5rem;
+  padding: 10px 15px;
   display: inline;
-  background-color: rgba(128, 128, 128, 0.5);
+  border: none;
+  border-radius: 20px;
   width: fit-content;
 }
 
 .slider_slide .main-desc p {
-  color: lime;
-  background-color: rgba(128, 128, 128, 0.5);
-  font-family: "Courier";
-  font-size: 28px;
-  font-weight: 550;
+  color: rgb(253, 174, 27);
+  /* font-family: "Courier"; */
+  font-size: 2.4rem;
+  font-weight: 600;
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
   animation: type 3s steps(60, end);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
 }
 
 .slider_slide .main-desc p:nth-child(2) {
@@ -64,12 +68,12 @@
 }
 
 .slider_slide p a {
-  color: lime;
   text-decoration: none;
 }
 
 .slider_slide span {
-  animation: blink 0.8s infinite;
+  animation: blink 0.9s infinite;
+  font-size: 3rem;
 }
 
 .slider_slide button {
@@ -87,7 +91,7 @@
 .slider_btn-next {
   width: 35px;
   height: 200px;
-  font-size: 20px;
+  font-size: 3rem;
   color: white;
   background: none;
   border: none;
@@ -96,12 +100,14 @@
   -o-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   transition: 0.5s ease;
+  font-weight: 500;
 }
 
 .slider_btn-next:hover,
 .slider_btn-prev:hover {
-  color: grey;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(180, 180, 180);
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .slider_btn-prev {
@@ -109,7 +115,7 @@
 }
 
 .slider_btn-next {
-  right: 0;
+  margin-right: 15px;
 }
 
 .slider_indicator-box button {
@@ -117,8 +123,8 @@
 }
 
 .slider_indicator {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   margin-right: 5px;
   padding: 0;
   border: none;
@@ -134,28 +140,32 @@
 }
 
 .slider_indicator-active {
-  background-color: grey;
+  background-color: rgba(167, 167, 167, 0.5);
+}
+
+.slider_indicator:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 767px) {
   .slider_slide .main-title h1 {
-    font-size: 24px;
+    font-size: 2.5em;
   }
 
   .slider_slide .main-desc p {
-    font-size: 18px;
+    font-size: 2.2rem;
   }
 }
 
 @media only screen and (max-width: 420px) {
   .slider_slide .main-title h1 {
     white-space: normal;
-    font-size: 20px;
+    font-size: 2.3rem;
   }
 
   .slider_slide .main-desc p {
     white-space: normal;
-    font-size: 16px;
+    font-size: 1.4rem;
   }
 }
 

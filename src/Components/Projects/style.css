@@ -4,20 +4,23 @@
   align-content: space-between;
   align-items: center;
   justify-content: center;
-  background-color: rgba(123, 134, 155, 0.2);
+  background-color: white;
   padding-bottom: 20px;
 }
 
 .projects-wrapper h1 {
-  color: rgb(36, 36, 36);
   flex: 1 100%;
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: rgb(8, 199, 233);
+  font-family: "Roboto", sans-serif;
 }
 
 .project-item {
   display: grid;
   flex-direction: column;
   overflow: hidden;
-  margin: 10px;
+  margin: 100px 20px;
   padding: 25px;
   width: 40%;
   height: 400px;
@@ -31,24 +34,40 @@
   -o-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   transition: 0.5s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-item h2 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: rgb(8, 199, 233);
+  transition: all 0.5s;
 }
 
 .project-item:hover {
   box-shadow: 5px 10px #888888;
   color: rgb(221, 144, 0);
+  border-color: rgb(17, 67, 160);
+  box-sizing: border-box;
+  transform: scale(1.02);
+}
+
+.project-item:hover h2 {
+  color: rgb(221, 144, 0);
 }
 
 .project-item span {
-  display: none;
+  visibility: hidden;
   opacity: 0;
   padding: 25px;
-  color: rgb(17, 17, 160);
-  font-weight: 600;
+  color: rgb(14, 162, 207);
+  font-size: 1.4rem;
+  font-weight: 800;
   margin-bottom: 5px;
 }
 
 .project-item:hover span {
-  display: block;
+  visibility: visible;
   opacity: 1;
 }
 
@@ -61,10 +80,12 @@
   -o-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   transition: 0.5s ease;
+  margin-top: -50px;
 }
 
 .project-item:hover img {
   filter: none;
+  margin-top: 10px;
 }
 
 .comingSoon {
@@ -75,10 +96,18 @@
   .project-item {
     flex: 0 100%;
   }
+
+  .projects-wrapper h1 {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 420px) {
   .project-item {
     height: 350px;
+  }
+
+  .projects-wrapper h1 {
+    font-size: 2.5rem;
   }
 }

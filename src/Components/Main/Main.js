@@ -25,21 +25,26 @@ const Main = () => {
       desc: "Enjoy while doing it.",
     },
     {
-      title: "My programming languages",
+      title: "My languages:",
       desc: "HTML5, CSS3, JavaScript, PHP",
     },
     {
-      title: "Frameworks and libraries",
-      desc: "React, MomentJS, NumeralJS, Vue",
+      title: "Frameworks:",
+      desc: "React, Socket.io,  Vue",
     },
     {
-      title: "Databases",
+      title: "Databases:",
       desc: "NoSQL, MySQL, Firebase etc.",
     },
   ];
 
   return (
-    <section className="main-section">
+    <section
+      className="main-section"
+      onSlide={() =>
+        sliderIndex === 6 ? setSliderIndex(0) : setSliderIndex(sliderIndex + 1)
+      }
+    >
       <div className="slider">
         <div className="slide-wrapper">
           <button

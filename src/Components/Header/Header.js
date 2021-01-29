@@ -3,6 +3,7 @@ import "./style.css";
 
 const Header = () => {
   const [isItOpen, setIsItOpen] = useState(false);
+  const x = "&#x2718";
   return (
     <header className="App-header">
       <div className="logo" id="logo">
@@ -11,7 +12,7 @@ const Header = () => {
       <div className={isItOpen ? "navLinks nav-active" : "navLinks"}>
         <ul>
           <span id="close-menu" onClick={() => setIsItOpen(!isItOpen)}>
-            &#x2718;
+            {isItOpen && "\u2716"}
           </span>
           <li>
             <a href="#logo">Home</a>
@@ -28,7 +29,7 @@ const Header = () => {
         </ul>
       </div>
       <button id="toggle-menu" onClick={() => setIsItOpen(!isItOpen)}>
-        &#9776;
+        {!isItOpen && "\u2630"}
       </button>
     </header>
   );

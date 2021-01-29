@@ -1,5 +1,11 @@
 .App-header {
-  background-color: #282c34;
+  background: rgb(4, 109, 130);
+  background: linear-gradient(
+    180deg,
+    rgba(4, 109, 130, 1) 0%,
+    rgba(43, 108, 176, 1) 32%,
+    rgba(2, 0, 36, 1) 91%
+  );
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -29,6 +35,15 @@ a:active {
   flex-grow: 8;
   text-align: left;
   margin-left: 20px;
+  font-weight: 600;
+  font-family: "Carter One", cursive;
+  letter-spacing: 2px;
+}
+
+.App-header .logo:hover {
+  transform: scale(1.01);
+  box-sizing: border-box;
+  color: rgb(252, 186, 38);
 }
 
 .App-header .navLinks {
@@ -42,6 +57,7 @@ a:active {
   flex-direction: row;
   list-style: none;
   justify-content: space-around;
+  font-family: "Lato", sans-serif;
 }
 
 .bar-options {
@@ -49,18 +65,20 @@ a:active {
 }
 
 .App-header ul li {
-  padding: 5px;
+  padding: 15px;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   -ms-transition: 0.5s ease;
   transition: 0.5s ease;
+  font-weight: 600;
 }
 
 .App-header ul li:hover {
-  background-color: rgba(123, 134, 155, 0.5);
-  transition: 1s;
   text-decoration: underline;
+  transform: scale(1.01);
+  box-sizing: border-box;
+  color: rgb(252, 186, 38);
 }
 
 #toggle-menu {
@@ -89,7 +107,8 @@ a:active {
 
 @media only screen and (max-width: 767px) {
   .App-header {
-    padding: 10px;
+    padding: 15px;
+    font-size: calc(15px + 2vmin);
   }
 
   .App-header .navLinks {
@@ -98,7 +117,7 @@ a:active {
     top: 0;
     background-color: inherit;
     width: 100%;
-    height: 500px;
+    height: 300px;
     transform: translateX(-100%);
     /*nav sidebar speed*/
     transition: all 0.5s linear;
@@ -115,14 +134,18 @@ a:active {
   #close-menu {
     display: block;
     text-align: right;
-    padding: 10px;
-    font-size: 28px;
+    padding: 15px;
+    font-size: 34px;
     cursor: pointer;
     transition: 0.5s;
   }
 
   #close-menu:hover {
-    color: rgb(107, 6, 6);
+    color: rgb(209, 12, 12);
+  }
+
+  .nav-active ul li:hover {
+    padding-left: 30px;
   }
 
   #toggle-menu {
